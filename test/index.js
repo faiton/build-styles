@@ -38,11 +38,12 @@ describe('example', function () {
 
     it('should post-process with Rework', function(){
         // variables
-        assert(~css.indexOf('body{color:#313131;}div{color:#F37561;}'));
+        assert(~css.indexOf('body{color:#313131}'));
+        assert(~css.indexOf('div{color:#F37561}'));
         // pseudos
         assert(~css.indexOf('::-moz-selection'));
         // custom media
-        assert(~css.indexOf('@media screen and (max-width: 30em){div{width:50px;}}'));
+        assert(~css.indexOf('@media screen and (max-width:30em){div{width:50px}}'));
 
         // remove comments
         assert(!~css.indexOf('/* A comment to be removed */'));

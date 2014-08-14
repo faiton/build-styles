@@ -12,11 +12,12 @@ describe('example', function () {
 
     it('should resolve', function (done) {
         resolve(fixture, {
-            install: true,
+            install: true
         }, function (err, tree) {
             if (err) return done(err);
 
             build = Build(tree);
+
             done();
         });
     });
@@ -24,8 +25,6 @@ describe('example', function () {
     it('should build styles', function (done) {
         build.styles(function (err, string) {
             if (err) return done(err);
-
-            console.log(string);
 
             css = string;
             done();

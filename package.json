@@ -26,5 +26,10 @@
     "autoprefixer": "^2.2.0",
     "faiton-builder": "^1.1.10"
   },
-  "main": "index.js"
+  "main": "index.js",
+  "devDependencies": {
+    "component-resolver": "^1.1.8",
+    "mocha": "^1.21.4",
+    "jshint": "^2.5.3"
+  }
 }

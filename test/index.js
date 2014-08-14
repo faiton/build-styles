@@ -25,6 +25,8 @@ describe('example', function () {
         build.styles(function (err, string) {
             if (err) return done(err);
 
+            console.log(string);
+
             css = string;
             done();
         });
@@ -35,6 +37,14 @@ describe('example', function () {
     });
 
     it('should post-process with Rework', function(){
-        assert(~css.indexOf('color:#ff0084'));
+        // variables
+        assert(~css.indexOf('body{color:#313131;}div{color:#F37561;}'));
+        // pseudos
+        assert(~css.indexOf('::-moz-selection'));
+        // custom media
+        assert(~css.indexOf('@media screen and (max-width: 30em){div{width:50px;}}'));
+
+        // remove comments
+        assert(!~css.indexOf('/* A comment to be removed */'));
     });
 });

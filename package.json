@@ -1,0 +1,32 @@
+{
+  "name": "faiton-build-styles",
+  "description": "CSS processing tools for faiton.",
+  "version": "0.0.1",
+  "author": "Mushex Antaranian",
+  "license": "MIT",
+  "keywords": [
+    "faiton"
+  ],
+  "homepage": "https://github.com/faiton/build-styles",
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/faiton/build-styles.git"
+  },
+  "bugs": {
+    "url": "https://github.com/faiton/build-styles/issues"
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "dependencies": {
+    "component-type": "^1.0.0",
+    "yiwn-extend": "^1.0.1",
+    "rework": "^1.0.0",
+    "rework-vars": "^3.1.1",
+    "rework-pseudos": "^0.3.0",
+    "rework-custom-media": "^0.1.1",
+    "autoprefixer": "^2.2.0",
+    "faiton-builder": "^1.1.10"
+  },
+  "main": "index.js"
+}

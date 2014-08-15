@@ -1,7 +1,7 @@
 {
   "name": "faiton-build-styles",
   "description": "CSS processing tools for faiton.",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "author": "Mushex Antaranian",
   "license": "MIT",
   "keywords": [
